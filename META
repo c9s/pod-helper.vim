@@ -7,7 +7,7 @@
 
 =type           plugin
 
-=version_from   vimlib/plugin/pod-helper.vim
+=version_from   vimlib/ftplugin/pod-helper.vim
 
 =vim_version    >= 7.2
 
