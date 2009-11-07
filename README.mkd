@@ -16,13 +16,12 @@ move your cursor to the subroutine declaration.
     sub my_sub {   # move to this line
 
     }
-    
-press
+
+then press
 
     <C-c><C-p>
 
-then the pod will be filled.
-
+the pod will be filled.
 
 we also support Template::Declare, pod will be filled like this:
 
@@ -30,13 +29,7 @@ we also support Template::Declare, pod will be filled like this:
 
     =cut
 
-    template 'xxx' => sub { 
+    template 'xxx' => sub {    # press <C-c><C-p> here
 
     };
-
-
-
-
-
-
 
