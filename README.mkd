@@ -1,0 +1,42 @@
+INSTALL
+==================
+
+Install VIM::Packager
+
+    $ cpan VIM::Packager
+
+
+    $ vim-packager build
+    $ make install
+
+USAGE
+==================
+move your cursor to the subroutine declaration.
+
+    sub my_sub {   # move to this line
+
+    }
+    
+press
+
+    <C-c><C-p>
+
+then the pod will be filled.
+
+
+we also support Template::Declare, pod will be filled like this:
+
+    =head2 TEMPLATE xxx
+
+    =cut
+
+    template 'xxx' => sub { 
+
+    };
+
+
+
+
+
+
+
