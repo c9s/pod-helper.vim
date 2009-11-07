@@ -1,0 +1,23 @@
+
+    *pod-helper.vim.txt*  Plugin for .... 
+
+pod-helper.vim                                       *pod-helper.vim* 
+Last Change: 2009-11-07T12:07:13
+
+|pod-helper.vim-description|   Description
+|pod-helper.vim-syntax|        Syntax
+|pod-helper.vim-usage|         Usage
+|pod-helper.vim-settings|      Settings
+|pod-helper.vim-features|      Features
+|pod-helper.vim-contact|       Contact
+
+For Vim version 7.0 or later.
+This plugin only works if 'compatible' is not set.
+{Vi does not have any of these features.}
+
+==============================================================================
+DESCRIPTION                                             *pod-helper.vim-description*
+
+    Your Description here....
+
+==============================================================================
