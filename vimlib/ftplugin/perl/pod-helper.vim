@@ -30,4 +30,13 @@ fun! FillPod()
   endif
 endf
 
-nnoremap <silent> <C-c><C-p>  :call FillPod()<CR>
+fun! BumpVersionPerl()
+ cal setline('.',"our $VERSION = " . strftime("%y.%j.%H")  . ";")
+ redraw
+ echo "version bumpped"
+endf
+
+autocmd filetype perl com! BumpVersion :cal BumpVersionPerl()
+com! FillPodHere  :cal FillPod()<CR>
+
+" nnoremap <silent> <C-c><C-p>  :call FillPod()<CR>

@@ -11,6 +11,11 @@ Install VIM::Packager
 
 USAGE
 ==================
+bind command to your favorite keys:
+
+  nnoremap <silent> <C-c><C-p>  :FillPodHere
+  nnoremap <silent> <C-c><C-b>  :BumpVersion
+
 move your cursor to the subroutine declaration.
 
     sub my_sub {   # move to this line
