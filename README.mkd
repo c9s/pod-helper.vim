@@ -13,7 +13,7 @@ USAGE
 ==================
 ### specify your favorite version style:
 
-currently we provide '365' (365days and year) , 't' (traditional) , 'unix'
+currently we provide '365' (365days and year) , 'unix'
 (unix timestamp) by default.
 
 add this to your .vimrc to setup version style:
@@ -22,8 +22,8 @@ add this to your .vimrc to setup version style:
 
 ### bind command to your favorite keys:
 
-    nnoremap <silent> <C-c><C-p>  :FillPodHere
-    nnoremap <silent> <C-c><C-b>  :BumpVersion
+    nnoremap <silent> <C-c><C-p>  :FillPodHere<CR>
+    nnoremap <silent> <C-c><C-b>  :BumpVersion<CR>
 
 ### editing
 

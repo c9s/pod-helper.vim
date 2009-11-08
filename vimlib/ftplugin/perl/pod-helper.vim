@@ -30,8 +30,8 @@ fun! FillPod()
   endif
 endf
 
-" 365 , t , unix
-let g:pod_version_style = '365'
+" 365 , unix
+let g:pod_version_style = 'unix'
 
 " Notice:
 " if you like tranditional style , you can just press <C-a> to increment
@@ -39,27 +39,23 @@ let g:pod_version_style = '365'
 fun! BumpVersionPerl()
 
   " current year and current day of 365 days
+  let tstr = ''
   if g:pod_version_style == '365'
+
     let tstr = strftime('%y.%j.%H')
 
-  " tranditional 
-  elseif g:pod_version_style == 't'
-    let vline = matchstr( getline('.') , '[0-9.]\+' )
-    let base = strlen(vline) - stridx(vline,'.') - 1
-    let vnumber = str2float( vline ) + pow(0.1,base)
-    let tstr = string(vnumber)
-
   " unix time stamp
-  elseif g:pod_version_style = 'unix'
+  elseif g:pod_version_style == 'unix'
     let tstr = reltimestr( reltime() )
   endif
 
-  cal setline('.', printf("our $VERSION = %s ;",tstr)
+  cal setline('.', printf("our $VERSION = %s ;",tstr))
   redraw
   echo "version bumpped"
 endf
 
 com! BumpVersion  :cal BumpVersionPerl()
-com! FillPodHere  :cal FillPod()<CR>
+com! FillPodHere  :cal FillPod()
 
-" nnoremap <silent> <C-c><C-p>  :call FillPod()<CR>
+"nnoremap <C-c><C-b>  :BumpVersion<CR>
+"nnoremap <C-c><C-p>  :FillPodHere<CR>
