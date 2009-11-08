@@ -11,10 +11,21 @@ Install VIM::Packager
 
 USAGE
 ==================
-bind command to your favorite keys:
+### specify your favorite version style:
 
-  nnoremap <silent> <C-c><C-p>  :FillPodHere
-  nnoremap <silent> <C-c><C-b>  :BumpVersion
+currently we provide '365' (365days and year) , 't' (traditional) , 'unix'
+(unix timestamp) by default.
+
+add this to your .vimrc to setup version style:
+
+    let g:pod_version_style = '365'
+
+### bind command to your favorite keys:
+
+    nnoremap <silent> <C-c><C-p>  :FillPodHere
+    nnoremap <silent> <C-c><C-b>  :BumpVersion
+
+### editing
 
 move your cursor to the subroutine declaration.
 
